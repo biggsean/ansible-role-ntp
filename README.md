@@ -1,4 +1,4 @@
-Role Name
+Ansible Role:  biggsean.ntp 1.x
 =========
 
 Simple role to install ntp.
