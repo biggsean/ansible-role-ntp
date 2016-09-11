@@ -4,6 +4,15 @@
 server {{ server }} iburst
 {% endfor %}
 
+{% for restricts in ntp_restricts %}
+restrict {{ restricts }}
+{% endfor %}
+
+{% if ntp_local_clock_fallback %}
+server 127.127.1.1
+fudge  127.127.1.1 stratum 12
+{% endif %}
+
 includefile /etc/ntp/crypto/pw
 
 keys /etc/ntp/keys
