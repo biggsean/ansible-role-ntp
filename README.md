@@ -1,5 +1,6 @@
 Ansible Role:  biggsean.ntp 1.x
 =========
+[![Build Status](https://travis-ci.org/biggsean/ansible-role-ntp.svg?branch=master)](https://travis-ci.org/biggsean/ansible-role-ntp)
 
 Simple role to install ntp.
 
