@@ -1,0 +1,22 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+ansible:
+  extra_vars: ansible_python_interpreter=/usr/bin/python
+docker:
+  containers:
+    - name: vagrant
+      image: centos
+      image_version: latest
+      privileged: true
+      command: /usr/lib/systemd/systemd
+      volume_mounts:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      ansible_groups:
+        - group1
+verifier:
+  name: testinfra
+  v: true
+  sudo: true
