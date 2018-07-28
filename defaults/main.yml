@@ -14,4 +14,3 @@ ntp_restricts:
   - "-6 ::1"
 
 ntp_local_clock_fallback: true
-
