@@ -18,5 +18,6 @@ docker:
         - group1
 verifier:
   name: testinfra
-  v: true
-  sudo: true
+  options:
+    v: true
+    sudo: true
